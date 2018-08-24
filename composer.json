@@ -1,0 +1,45 @@
+{
+    "name": "settermjd/antoratools",
+    "description": "This project provides a set of PHP-based tools for working with Antora builds.",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^7.3",
+        "mikey179/vfsStream": "^1.6"
+    },
+    "license": "GPL v2",
+    "authors": [
+        {
+            "name": "Matthew Setter",
+            "email": "matthew@matthewsetter.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "AntoraTools\\": "src/AntoraTools/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AntoraToolsTest\\": "test/AntoraTools/"
+        }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "@development-enable"
+        ],
+        "check": [
+            "@cs-check",
+            "@test",
+            "@analyze"
+        ],
+        "analyze": "phpstan analyze -l max -c ./phpstan.installer.neon ./src ./config",
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+    }
+}
