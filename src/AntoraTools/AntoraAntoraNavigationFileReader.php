@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace AntoraTools;
 
-class NavigationFileReader
+class AntoraNavigationFileReader
 {
 	const INC_FILE_REGEX ='/(?<=:)(.*\.adoc)(?=\[)/m';
 
