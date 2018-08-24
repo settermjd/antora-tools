@@ -26,7 +26,7 @@ class NavigationFileReader
 	 * @see https://docs.antora.org/antora/1.0/navigation/list-structures/
 	 * @return array
 	 */
-	public function parseNavigationFile()
+	public function parseNavigationFile() : array
 	{
 		preg_match_all(self::INC_FILE_REGEX, $this->fileContents, $matches, PREG_SET_ORDER, 0);
 
