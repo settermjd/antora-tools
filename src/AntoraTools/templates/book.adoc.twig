@@ -1,0 +1,14 @@
+= {{ title }}
+{# Add the book front-matter #}
+:homepage: {{ homepage }}
+:toc:
+:imagesdir: {{ imagesdir }}
+:icons: font
+:icon-set: octicon
+{{ version }}, {{ buildDate }}
+
+{# Render the list of files to include in the book #}
+{% for file in files %}
+include::{{ fileBasePath }}{{ file }}[]
+
+{% endfor %}

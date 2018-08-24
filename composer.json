@@ -15,7 +15,10 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": "7.2"
+        "php": "7.2",
+        "twig/twig": "^2.5",
+        "zendframework/zend-expressive-template": "^2.0",
+        "zendframework/zend-expressive-twigrenderer": "^2.1"
     },
     "autoload": {
         "psr-4": {
