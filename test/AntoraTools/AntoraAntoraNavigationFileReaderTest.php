@@ -3,10 +3,10 @@ declare(strict_types=1);
 
 namespace AntoraToolsTest;
 
-use AntoraTools\NavigationFileReader;
+use AntoraTools\AntoraNavigationFileReader;
 use PHPUnit\Framework\TestCase;
 
-class NavigationFileReaderTest extends TestCase
+class AntoraNavigationFileReaderTest extends TestCase
 {
 	public function testCanFindAllReferencedFilesInANavigationFile()
 	{
@@ -47,7 +47,7 @@ class NavigationFileReaderTest extends TestCase
 ** xref:troubleshooting.adoc[Troubleshooting]
 EOF;
 
-		$navFileReader = new NavigationFileReader($fileContents);
+		$navFileReader = new AntoraNavigationFileReader($fileContents);
 		$files = $navFileReader->parseNavigationFile();
 		$this->assertCount(30, $files);
 	}
@@ -59,7 +59,7 @@ EOF;
 *** xref:pim/sync_osx.adc[Sync OSX]
 EOF;
 
-		$navFileReader = new NavigationFileReader($fileContents);
+		$navFileReader = new AntoraNavigationFileReader($fileContents);
 		$files = $navFileReader->parseNavigationFile();
 		$this->assertCount(0, $files);
 	}
