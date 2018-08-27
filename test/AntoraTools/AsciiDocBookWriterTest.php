@@ -45,7 +45,7 @@ EOF;
 			'homePage' => 'https://github.com/owncloud/docs',
 			'imagesDir' => './public/',
 			'version' => '0.0.1',
-			'buildDate' => '2018-08-24',
+			'buildDate' => date('Y-m-d'),
 			'fileBasePath' => 'modules/developer_manual/pages/',
 		];
 		

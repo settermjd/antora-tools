@@ -41,7 +41,6 @@ class AsciiDocBookWriter
 	{
 		return $this->templateRenderer->render(self::BOOK_TEMPLATE, [
 			'title' => $this->options['title'],
-			'homepage' => $this->options['homePage'],
 			'imagesdir' => $this->options['imagesDir'],
 			'version' => $this->options['version'],
 			'buildDate' => $this->options['buildDate'],
