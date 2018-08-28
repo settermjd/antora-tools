@@ -1,5 +1,7 @@
 # Antora Tools
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fb51907ca31441e1b0f8e122e38b1c44)](https://www.codacy.com/app/settermjd/antora-tools?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=settermjd/antora-tools&amp;utm_campaign=Badge_Grade)
+
 This project provides a set of PHP-based tools for working with Antora projects.
 
 ## Current Feature Set
